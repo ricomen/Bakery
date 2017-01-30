@@ -2,10 +2,15 @@
   font-family: "Scriptina";
   font-size: 30px;
   line-height: 38px;
+  margin-top: -15px;
   font-weight: normal;
-  font-style: normal;
+  font-style: normal;  
   &__link {
   color: #fff;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+    &:hover {
+      color: @base-color-desc;
+    }
   }
 }

@@ -4,13 +4,36 @@
     padding: 0;
   }
   &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 80px;
     font-family: "Alegreya";
     text-transform: uppercase;
+    &::after {
+      position: absolute;
+      content: "~";
+      right: 35px;
+      top: 0;
+      color: #fff 
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        content: "";
+      }
+    }
   } 
   &__link {
     color: #fff;
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
+    letter-spacing: 4px;
+    transition: color 0.2s ease-in-out;
+    &:hover {     
+      color: #ccc;
+      text-decoration: underline;
+    }
   }
 }

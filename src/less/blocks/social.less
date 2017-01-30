@@ -2,7 +2,15 @@
   color: #fff;
   &__link {
     color: #fff;
+    margin-right: 30px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 24px;     
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: #ccc;         
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

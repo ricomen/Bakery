@@ -527,6 +527,20 @@ body {
   background-position: center 30%;
   background-size: cover;
 }
+.page-header__top {
+  min-height: 70px;
+
+  background-color: rgba(86, 86, 76, .6);
+}
+.page-header__top--flex {
+  display: -ms-flexbox;
+  display: flex;
+
+  padding-top: 25px;
+
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -534,15 +548,44 @@ body {
 .navigation__item {
   font-family: "Alegreya";
 
+  position: relative;
+
+  display: inline-block;
+
+  padding-right: 80px;
+
+  vertical-align: top;
   text-transform: uppercase;
+}
+.navigation__item::after {
+  position: absolute;
+  top: 0;
+  right: 35px;
+
+  content: "~";
+
+  color: #fff;
+}
+.navigation__item:last-child {
+  padding-right: 0;
+}
+.navigation__item:last-child::after {
+  content: "";
 }
 .navigation__link {
   font-size: 14px;
   line-height: 24px;
 
+  transition: color .2s ease-in-out;
   text-decoration: none;
+  letter-spacing: 4px;
 
   color: #fff;
+}
+.navigation__link:hover {
+  text-decoration: underline;
+
+  color: #ccc;
 }
 .logo {
   font-family: "Scriptina";
@@ -550,11 +593,17 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 38px;
+
+  margin-top: -15px;
 }
 .logo__link {
+  transition: color .2s ease-in-out;
   text-decoration: none;
 
   color: #fff;
+}
+.logo__link:hover {
+  color: #a47d5e;
 }
 .promo {
   padding-top: 215px;
@@ -618,8 +667,16 @@ body {
   color: #fff;
 }
 .btn--dashed {
+  transition: all .2s ease-in-out;
+
   border: 2px dashed #645f57;
   background-color: rgba(119, 115, 110, .5);
+}
+.btn--dashed:hover {
+  text-decoration: underline;
+
+  color: #ccc;
+  background-color: rgba(119, 115, 110, .7);
 }
 .social {
   color: #fff;
@@ -628,5 +685,15 @@ body {
   font-size: 16px;
   line-height: 24px;
 
+  margin-right: 30px;
+
+  transition: color .2s ease-in-out;
+
   color: #fff;
+}
+.social__link:hover {
+  color: #ccc;
+}
+.social__link:last-child {
+  margin-right: 0;
 }

@@ -1,7 +1,16 @@
-.page-header {
+.page-header {  
   background-color: #cbcfd3;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
+  &__top {
+    min-height: 70px;
+    background-color: rgba(86, 86, 76, 0.6);
+    &--flex {
+      display: flex;
+      padding-top: 25px;
+      justify-content: space-between;      
+    }
+  }
 }
