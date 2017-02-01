@@ -1,0 +1,42 @@
+.page-footer {
+  &__nav {
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-color: #c2beba;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      font-family: "Alegreya", serif;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      font-style: normal;
+    }
+    &-link {
+      text-decoration: none;
+      color: @base-color-text;
+      transition: color 0.2s ease-in-out;
+      &:hover {     
+        color: #ccc;
+        text-decoration: underline;
+      }
+      &--logo {
+        font-family: "Scriptina", serif;
+        font-size: 30px;
+        line-height: 36px;
+        &:hover {   
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
