@@ -733,6 +733,11 @@ body {
 
   text-align: center;
 }
+.art__column--right {
+  font-size: 0;
+
+  padding: 0;
+}
 .art__title {
   font-family: "Alegreya", serif;
   font-size: 48px;
@@ -791,7 +796,7 @@ body {
 
   content: "\201d";
 }
-.art__image {
+.art__chef-photo {
   overflow: hidden;
 
   width: 100px;
@@ -800,9 +805,46 @@ body {
   border: 5px solid #fff;
   border-radius: 50%;
 }
-.art__image image {
+.art__chef-photo image {
   max-width: 100%;
   height: auto;
+}
+.art__gallery {
+  position: relative;
+}
+.art__gallery-item {
+  display: inline-block;
+
+  margin: 10px 10px;
+
+  vertical-align: top;
+}
+.art__gallery-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  overflow: hidden;
+
+  width: 279px;
+  height: 258px;
+  margin-top: -139px;
+  margin-left: -139px;
+
+  background-image: url("../img/art-logo-bg.png");
+  background-repeat: no-repeat;
+}
+.art__gallery-logo span {
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  line-height: 36px;
+
+  display: table-cell;
+
+  width: 279px;
+  height: 258px;
+
+  vertical-align: middle;
 }
 .page-footer {
   margin-bottom: 70px;
