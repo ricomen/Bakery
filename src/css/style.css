@@ -698,6 +698,12 @@ body {
   color: #ccc;
   background-color: rgba(119, 115, 110, .7);
 }
+.btn--next,
+.btn--prev {
+  border: none;
+  outline: none;
+  background: transparent;
+}
 .social {
   color: #fff;
 }
@@ -824,13 +830,12 @@ body {
   top: 50%;
   left: 50%;
 
-  overflow: hidden;
-
   width: 279px;
   height: 258px;
   margin-top: -139px;
   margin-left: -139px;
 
+  opacity: .95;
   background-image: url("../img/art-logo-bg.png");
   background-repeat: no-repeat;
 }
@@ -845,6 +850,62 @@ body {
   height: 258px;
 
   vertical-align: middle;
+}
+.pancake {
+  position: relative;
+
+  background-image: url("../img/pancake-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pancake__raiting {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+.pancake__bullets {
+  position: absolute;
+}
+.slider__item {
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.slider__link {
+  display: block;
+  overflow: hidden;
+
+  width: 90px;
+  height: 90px;
+
+  vertical-align: middle;
+
+  border-radius: 50%;
+}
+.slider__link img {
+  max-width: 100%;
+  height: auto;
+}
+.slider__bullets {
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.slider__bullet {
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid #d8bba3;
+  border-radius: 50%;
+  background-color: #d8bba3;
+}
+.slider__bullet--active {
+  background-color: transparent;
 }
 .page-footer {
   margin-bottom: 70px;

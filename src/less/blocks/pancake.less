@@ -1,0 +1,46 @@
+.pancake {
+  position: relative;
+  background-image: url("../img/pancake-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__raiting {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+  }
+  &__bullets {
+    position: absolute;
+  }
+}
+.slider {
+  &__item {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link {
+    display: block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__bullets {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bullet {
+    .square(10px);
+    border: 1px solid #d8bba3;
+    border-radius: 50%;
+    background-color: #d8bba3;
+    &--active {
+      background-color: transparent;
+    }
+  }
+}
