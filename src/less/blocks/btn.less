@@ -1,4 +1,5 @@
 .btn {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   font-family: "Alegreya", "Arial", serif;
@@ -20,16 +21,29 @@
   }
   &--next, 
   &--prev {
-    border:none;   
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
     outline: none;
-    background: transparent;
+    background: transparent;    
+    background-image: url("../img/slider-arrow.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
   }
   &--next {
+    position: absolute;
+    top: 30px;
+    right: 0;
   }
   &--prev {
-
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transform: rotate(180deg);
   }
-  &--spider-active {
-
+  &--slider-active {
+    cursor: pointer;
+    opacity: 1;
   }
 }

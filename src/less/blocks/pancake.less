@@ -1,19 +1,72 @@
 .pancake {
-  position: relative;
+  .base-padding(120px);  
   background-image: url("../img/pancake-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  &--flex {
+    position: relative;
+    max-width: 966px;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 15px 80px #979797;
+    position: relative;
+  }  
   &__raiting {
     position: absolute;
     left: 20px;
     top: 50%;
   }
-  &__bullets {
-    position: absolute;
+  &__image {
+    width: 43%;
+    height: 513px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__description {
+    width: 56%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 63px 10px;
+    background-image: url("../img/pancake-article-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Alegreya", serif; 
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+  }
+  &__favourite {
+    margin: 0;    
+    padding: 0;
+    font-family: "Alegreya", serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a47d5e;
+  }
+  &__text {
+    margin: 0;
   }
 }
+
 .slider {
+  padding: 0 32px;
+  position: relative;
+  &__items {
+    margin-bottom: 13px;
+  }
   &__item {
     display: flex;
     justify-content: space-around;
@@ -31,14 +84,20 @@
     }
   }
   &__bullets {
-    display: flex;
-    justify-content: space-between;
+    font-size: 0;
+    text-align: center;
   }
   &__bullet {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
     .square(10px);
     border: 1px solid #d8bba3;
     border-radius: 50%;
     background-color: #d8bba3;
+    &:last-child {
+      margin-right: 0;
+    }
     &--active {
       background-color: transparent;
     }

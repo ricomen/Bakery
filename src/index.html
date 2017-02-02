@@ -73,37 +73,43 @@
       </div> <!-- art -->
     </div>
     <div class="pancake">
-      <div class="container">
-
-        <div class="pancake__raiting">
-        звездочки
-        </div>
+      <div class="container pancake--flex">
+        <div class="pancake__raiting">звездочки</div>
         <div class="puncake__image">
-          <img src="img/pancake-1.jpg" alt="">          
+          <img src="img/pancake-1.jpg" width="420" height="513" alt="Pancake">
         </div>
 
         <div class="pancake__description">
-          <h2 class="pancake__title">Tasty pancakes</h2>
-          <h3 class="pancake__favourite">Season favourite</h3>
+          <div class="time-box  time-box--pancake">
+            <h2 class="time-box__title">Ready in</h2>
+            <p class="time-box__value">40</p>
+            <span class="time-box__measure">min</span>
+          </div>
+          <hgroup>
+            <h2 class="pancake__title">Tasty pancakes</h2>
+            <h3 class="pancake__favourite">Season favourite</h3> 
+          </hgroup>  
+
           <p class="pancake__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
-        </div>
-        <div class="slider">          
+
+        <div class="slider">       
          
           <div class="slider__items">
             <div class="slider__item">
-              <a href="" class="slider__link"><img src="img/pancake-2.jpg" alt="Блины"></a>
-              <a href="" class="slider__link"><img src="img/pancake-3.jpg" alt="Блины"></a>
-              <a href="" class="slider__link"><img src="img/pancake-4.jpg" alt="Блины"></a>
+              <a href="" class="slider__link"><img src="img/pancake-2.jpg" alt="Pancake"></a>
+              <a href="" class="slider__link"><img src="img/pancake-3.jpg" alt="Pancake"></a>
+              <a href="" class="slider__link"><img src="img/pancake-4.jpg" alt="Pancake"></a>
             </div>
           </div>
-          <button class="btn  btn--prev" type="button">1</button>
-          <button class="btn  btn--next" type="button">2</button>
+          <button class="btn  btn--prev " type="button"></button>
+          <button class="btn  btn--next  btn--slider-active" type="button"></button>
            <div class="slider__bullets">
             <div class="slider__bullet  slider__bullet--active"></div>
             <div class="slider__bullet"></div>
             <div class="slider__bullet"></div>
             <div class="slider__bullet"></div>
           </div>
+        </div> <!-- slider -->
         </div>
       </div>
     </div>

@@ -681,6 +681,7 @@ body {
 
   padding: 12px 44px;
 
+  cursor: pointer;
   vertical-align: top;
   text-decoration: none;
 
@@ -700,9 +701,33 @@ body {
 }
 .btn--next,
 .btn--prev {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  opacity: .5;
   border: none;
   outline: none;
   background: transparent;
+  background-image: url("../img/slider-arrow.png");
+  background-repeat: no-repeat;
+}
+.btn--next {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.btn--prev {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  transform: rotate(180deg);
+}
+.btn--slider-active {
+  cursor: pointer;
+
+  opacity: 1;
 }
 .social {
   color: #fff;
@@ -852,20 +877,92 @@ body {
   vertical-align: middle;
 }
 .pancake {
-  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   background-image: url("../img/pancake-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.pancake--flex {
+  position: relative;
+
+  display: -ms-flexbox;
+  display: flex;
+
+  max-width: 966px;
+
+  background-color: #fff;
+  box-shadow: 0 15px 80px #979797;
+
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .pancake__raiting {
   position: absolute;
   top: 50%;
   left: 20px;
 }
-.pancake__bullets {
-  position: absolute;
+.pancake__image {
+  width: 43%;
+  height: 513px;
+}
+.pancake__image img {
+  max-width: 100%;
+  height: auto;
+}
+.pancake__description {
+  display: -ms-flexbox;
+  display: flex;
+      flex-direction: column;
+
+  box-sizing: border-box;
+  width: 56%;
+  padding: 80px 63px 10px;
+
+  background-image: url("../img/pancake-article-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.pancake__title {
+  font-family: "Alegreya", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 56px;
+
+  margin: 0;
+  padding: 0;
+}
+.pancake__favourite {
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #a47d5e;
+}
+.pancake__text {
+  margin: 0;
+}
+.slider {
+  position: relative;
+
+  padding: 0 32px;
+}
+.slider__items {
+  margin-bottom: 13px;
 }
 .slider__item {
   display: -ms-flexbox;
@@ -890,22 +987,70 @@ body {
   height: auto;
 }
 .slider__bullets {
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 0;
 
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  text-align: center;
 }
 .slider__bullet {
+  display: inline-block;
+
   width: 10px;
   height: 10px;
+  margin-right: 10px;
+
+  vertical-align: middle;
 
   border: 1px solid #d8bba3;
   border-radius: 50%;
   background-color: #d8bba3;
 }
+.slider__bullet:last-child {
+  margin-right: 0;
+}
 .slider__bullet--active {
   background-color: transparent;
+}
+.time-box {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+
+  box-sizing: border-box;
+  width: 201px;
+  height: 201px;
+  padding-top: 30px;
+
+  text-align: center;
+
+  color: #a47d5e;
+  background-color: #f3f1e9;
+  background-image: url("../img/pancake-ready-bg.jpg");
+  background-repeat: no-repeat;
+}
+.time-box__title {
+  font-size: 18px;
+  line-height: 26px;
+
+  margin: 0;
+  padding: 0;
+}
+.time-box__value {
+  font-size: 92px;
+  line-height: 92px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #dfc691;
+}
+.time-box--pancake {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin-top: -100px;
+  margin-right: -100px;
+
+  box-shadow: 0 20px 80px #979797;
 }
 .page-footer {
   margin-bottom: 70px;
