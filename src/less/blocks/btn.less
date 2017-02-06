@@ -9,10 +9,10 @@
   color: #fff;
   text-decoration: none;
   padding: 12px 44px;
+  transition: all 0.2s ease-in-out;
   &--dashed {  
     background-color: rgba(119, 115, 110, 0.5);
     border: 2px dashed #645f57;
-    transition: all 0.2s ease-in-out;
     &:hover {
       background-color: rgba(119, 115, 110, 0.7);
       text-decoration: underline;
@@ -45,5 +45,18 @@
   &--slider-active {
     cursor: pointer;
     opacity: 1;
+  }
+  &--cards {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #dfc691;
+    border: 2px solid;
+    border-color: #dfc691;
+    padding-left: 70px;
+    padding-right: 70px;
+    &:hover {
+      color: @base-color-text;
+      border-color: @base-color-text;
+    }
   }
 }
