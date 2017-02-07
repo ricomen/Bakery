@@ -752,6 +752,23 @@ body {
   color: #56534c;
   border-color: #56534c;
 }
+.btn--sandwich {
+  font-size: 18px;
+
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+
+  text-transform: uppercase;
+
+  color: #dfc691;
+  border: 2px dashed #645f57;
+  background-color: #fff;
+}
+.btn--sandwich:hover {
+  color: #56534c;
+  border-color: #56534c;
+}
 .social {
   color: #fff;
 }
@@ -1217,13 +1234,72 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.best-sandwich {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  text-align: center;
+
+  background-image: url("../img/sandwich-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.best-sandwich__title {
+  font-family: "Alegreya", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 56px;
+
+  margin: 0;
+  padding: 0;
+}
+.best-sandwich__subtitle {
+  margin: 0;
+}
+.best-sandwich__text {
+  margin: 0;
+}
+.best-sandwich__columns {
+  display: -ms-flexbox;
+  display: flex;
+
+  margin-right: -5px;
+  margin-left: -5px;
+
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.best-sandwich__recipe {
+  position: relative;
+}
+.best-sandwich__image {
+  margin: 0;
+  padding: 0;
+}
+.best-sandwich__image img {
+  font-size: 0;
+
+  max-width: 100%;
+  height: auto;
+
+  border: 12px solid #fff;
+}
+.best-sandwich__timer {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
 .time-box {
   font-family: "Alegreya", serif;
   font-weight: bold;
 
   box-sizing: border-box;
-  width: 201px;
-  height: 201px;
+  width: 200px;
+  height: 200px;
   padding-top: 30px;
 
   text-align: center;
@@ -1249,6 +1325,11 @@ body {
 
   color: #dfc691;
 }
+.time-box__value--darken {
+  font-size: 60px;
+
+  color: #56534c;
+}
 .time-box--pancake {
   position: absolute;
   top: 0;
@@ -1258,6 +1339,10 @@ body {
   margin-right: -100px;
 
   box-shadow: 0 20px 80px #979797;
+}
+.time-box--opacity {
+  background-color: rgba(255, 255, 255, .5);
+  background-image: none;
 }
 .page-footer {
   margin-bottom: 70px;
@@ -1275,6 +1360,8 @@ body {
   border-top: 1px solid;
   border-bottom: 1px solid;
 
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -ms-flex-align: center;

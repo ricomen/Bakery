@@ -1,6 +1,6 @@
-.time-box {
+.time-box {  
   padding-top: 30px;
-  .square(201px);
+  .square(200px);
   font-family: "Alegreya", serif;
   text-align: center;
   font-weight: bold;
@@ -21,6 +21,10 @@
     margin: 0;
     padding: 0;
     color: #dfc691;
+    &--darken {
+      color: @base-color-text;
+      font-size: 60px;
+    }
   }
   &--pancake {
     position: absolute;
@@ -30,6 +34,8 @@
     margin-right: -100px;
     box-shadow: 0 20px 80px #979797;
   }
-
-
+  &--opacity {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.5);    
+  }
 }
