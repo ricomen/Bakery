@@ -811,7 +811,7 @@ body {
 
   letter-spacing: 1px;
 
-  color: #c2beba;
+  color: #a47d5e;
 }
 .art__description {
   margin: 0;
@@ -1144,18 +1144,78 @@ body {
 
   color: #c2beba;
 }
-.breakfast__text--brown {
-  color: #56534c;
-}
 .breakfast__price {
   font-size: 36px;
 
   color: #dfc691;
 }
 .breakfast__cards {
-  padding: 55px;
+  position: relative;
 
+  max-width: 440px;
+}
+.breakfast__card {
+  z-index: 50;
+
+  box-sizing: border-box;
+  padding: 50px 0;
+
+  border: 2px dashed #56534c;
+  outline: 10px solid #f3f1e9;
   background-color: #f3f1e9;
+  background-image: url("../img/breakfast-cards-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.breakfast__card-title {
+  font-family: "Alegreya", serif;
+  font-size: 48px;
+  line-height: 1.3;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  letter-spacing: 1px;
+
+  color: #56534c;
+}
+.breakfast__card-text {
+  font-size: 16px;
+  font-weight: bold;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  color: #56534c;
+}
+.breakfast__card-header {
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+
+  position: relative;
+
+  padding-bottom: 80px;
+
+  text-transform: uppercase;
+
+  color: #56534c;
+}
+.breakfast__card-header::after {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  content: "";
+
+  background-image: url("../img/breakfast-cards-header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .time-box {
   font-family: "Alegreya", serif;
