@@ -68,16 +68,23 @@
 .slider {
   padding: 0 32px;
   position: relative;
+
   &__items {
     margin-bottom: 13px;
+    height: 90px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
   }
   &__item {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    transition: left 0.5s ease-in-out;
   }
   &__link {
-    display: block;
-    vertical-align: middle;
+    margin: 0 12px;
+    display: inline-block;
+    vertical-align: middle;    
     overflow: hidden;
     border-radius: 50%;
     width: 90px;
@@ -85,25 +92,6 @@
     img {
       max-width: 100%;
       height: auto;
-    }
-  }
-  &__bullets {
-    font-size: 0;
-    text-align: center;
-  }
-  &__bullet {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    .square(10px);
-    border: 1px solid #d8bba3;
-    border-radius: 50%;
-    background-color: #d8bba3;
-    &:last-child {
-      margin-right: 0;
-    }
-    &--active {
-      background-color: transparent;
     }
   }
 }

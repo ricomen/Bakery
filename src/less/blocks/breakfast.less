@@ -27,8 +27,8 @@
     &::after {
     position: absolute;
     content: "";
-    background-image: url("../img/breakfast-price-decor.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/sprite.png");
+    background-position: 0px -22px;
     width: 90px;
     height: 27px;
     bottom: 10px;
@@ -86,9 +86,10 @@
   }
   &__cards {
     position: relative;
-    max-width: 440px;
+    width: 440px;
   }
   &__card {
+    position: relative;
     box-sizing: border-box;
     padding: 50px 0;
     background-color: @base-color-bg; 
@@ -97,7 +98,6 @@
     background-image: url("../img/breakfast-cards-bg.png");
     background-repeat: no-repeat;
     background-position: right bottom;
-    z-index: 50;
     &-title {
       margin: 0;
       margin-bottom: 30px;
@@ -128,12 +128,13 @@
       &::after {
         content: "";
         position: absolute;
-        background-image: url("../img/breakfast-cards-header-bg.png");
+        background-image: url("../img/sprite.png");
+        background-position: 0px -101px;
         background-repeat: no-repeat;
-        background-position: center center;
-        left: 0;
-        height: 80px;
-        width: 100%;    
+        width: 367px;
+        height: 60px;
+        left: 50%;
+        margin-left: -183.5px;
       }
     }  
   }

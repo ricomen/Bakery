@@ -1,19 +1,18 @@
 .page-footer {
   .margin-bottom(70px);
   &__nav {
-    &-list {      
+    &-list {    
+      .row-flex();
+      .justify-content(space-around);
       margin: 0;
       padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      list-style: none;   
       align-items: center;
       border-color: #c2beba;
       border-top: 1px solid;
       border-bottom: 1px solid;      
     }
-    &-item {   
+    &-item {
       position: relative;   
       padding-right: 45px;
       font-family: "Alegreya", serif;
@@ -25,14 +24,7 @@
       text-transform: uppercase;
       &:last-child {
         padding-right: 0;
-      }
-      &::after {
-        content: "~";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -14px;     
-      }
+      }  
     }
     &-link {
       display: block;

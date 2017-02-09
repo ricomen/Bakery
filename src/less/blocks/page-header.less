@@ -1,5 +1,4 @@
-.page-header {  
-  position: relative;
+.page-header {
   background-color: #cbcfd3;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
@@ -7,25 +6,13 @@
   background-size: cover;
   border-bottom: 10px;  
   border-bottom-color: #fff;
-  &::after {
-    position: absolute;
-    content: "";
-    width: 106px;
-    height: 106px;
-    bottom: -53px;
-    left: 50%;
-    margin-left: -53px;
-    background-image: url("../img/bread.png");
-    background-repeat: no-repeat;
-    z-index: 10;
-  }
-  &__top {
-    min-height: 70px;
+  &__top {    
     background-color: rgba(86, 86, 76, 0.6);
     &--flex {
       display: flex;
-      padding-top: 25px;
-      justify-content: space-between;      
+      flex-wrap: wrap;  
+      padding: 25px 0;   
+      justify-content: space-between;     
     }
   }
 }
