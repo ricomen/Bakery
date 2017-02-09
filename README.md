@@ -2,4 +2,5 @@
 
 Фиксированная верстка
 
-![](//github.com/ricomen/Bakery/blob/master/src/Bakery.jpg)
+
+![Image alt](https://github.com/ricomen/Bakery/raw/master/src/image.png)
