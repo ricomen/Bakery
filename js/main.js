@@ -2,7 +2,7 @@ var slides = document.querySelectorAll('.slider__item');
 var btnPrev = document.querySelector('.btn--prev');
 var btnNext = document.querySelector('.btn--next');
                       
-
+window.onload = initSlider;
 
 function initSlider() {//выстаиваем слайды
   for(var i = 0;  i < slides.length; i++) {
@@ -37,6 +37,5 @@ btnPrev.onclick = function nextSlide() {//пред. слайд
       slides[i].style.left = parseInt(slides[i].style.left) + slides[0].offsetWidth + "px";
     }
   } else lastSlide();
-
-  initSlider();
+  
 }
