@@ -2,8 +2,8 @@ var slides = document.querySelectorAll('.slider__item');
 var btnPrev = document.querySelector('.btn--prev');
 var btnNext = document.querySelector('.btn--next');
                       
-window.onload = initSlider;
-
+window.onload  = initSlider();
+console.log(slides);
 function initSlider() {//выстаиваем слайды
   for(var i = 0;  i < slides.length; i++) {
     slides[i].style.left = (slides[i].offsetWidth * i) + "px";
@@ -37,5 +37,4 @@ btnPrev.onclick = function nextSlide() {//пред. слайд
       slides[i].style.left = parseInt(slides[i].style.left) + slides[0].offsetWidth + "px";
     }
   } else lastSlide();
-  
 }
